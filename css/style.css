@@ -112,10 +112,38 @@ body {
     position: relative;
 }
 
+.choose-colour {
+    padding: 45px 0 180px;
+    text-align: center;
+}
+
+.choose-colour__title {
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 555px;
+    margin: 0 auto 20px;
+}
+
+.choose-colour__text {
+    max-width: 555px;
+    margin: 0 auto 80px;
+}
+
+.choose-colour__list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.choose-colour-btn {
+    border-radius: 20px;
+    border: 1px solid #777;
+    padding: 50px 55px;
+}
 
 
 /* 
-2 part 00:00 min
+2 part 13:20 min
 
 1 part: https://www.youtube.com/watch?v=OWJ9jhH50Eo 
 2 part: https://www.youtube.com/watch?v=mPub0dbLE_Q
