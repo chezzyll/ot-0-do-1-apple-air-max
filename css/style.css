@@ -1,149 +1,180 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 20px;
 }
 
 .container {
-    max-width: 1220px;
-    padding: 0 10px;
-    margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .header {
-    position: relative;
-    min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
 
 .header__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
 }
 
 .menu__list {
-    display: flex;
-    align-items: center;
-    gap: 0 40px;
-    font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  font-weight: 700;
 }
 
 .menu__btn {
-    padding: 15px 58px;
-    border-radius: 30px;
-    background-color: #000;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
+  padding: 15px 58px;
+  border-radius: 30px;
+  background-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .header__content-images {
-    text-align: center;
-    padding-bottom: 50px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .header__content-images::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
-    z-index: -2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
+  z-index: -2;
 }
 
 .title {
-    font-size: 210px;
-    font-weight: 700;
-    position: absolute;
-    margin: 0 auto;
-    padding-top: 110px;
+  font-size: 210px;
+  font-weight: 700;
+  position: absolute;
+  margin: 0 auto;
+  padding-top: 110px;
 }
 
 .title--pod {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: -1;
 }
 
 .title--s {
-    display: inline-block;
-    transform: translateY(60px);
+  display: inline-block;
+  transform: translateY(60px);
 }
 
 .title--m {
-    display: inline-block;
-    transform: translate(-57px, 275px);
+  display: inline-block;
+  transform: translate(-57px, 275px);
 }
 
 .title--ax {
-    display: inline-block;
-    transform: translate(-128px, 413px);
-    z-index: -1;
-    position: relative;
+  display: inline-block;
+  transform: translate(-128px, 413px);
+  z-index: -1;
+  position: relative;
 }
 
 .choose-colour {
-    padding: 45px 0 180px;
-    text-align: center;
+  padding: 45px 0 180px;
+  text-align: center;
 }
 
 .choose-colour__title {
-    font-size: 36px;
-    font-weight: 700;
-    max-width: 555px;
-    margin: 0 auto 20px;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 555px;
+  margin: 0 auto 20px;
 }
 
 .choose-colour__text {
-    max-width: 555px;
-    margin: 0 auto 80px;
+  max-width: 555px;
+  margin: 0 auto 80px;
 }
 
 .choose-colour__list {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .choose-colour-btn {
-    border-radius: 20px;
-    border: 1px solid #777;
-    padding: 50px 55px;
+  border-radius: 20px;
+  border: 1px solid #777;
+  padding: 50px 55px;
+}
+
+.composition {
+    margin-bottom: 180px;
+}
+
+.composition__title {
+    text-align: center;
+}
+
+.composition__text {
+    text-align: center;
+    min-width: 655px;
+    margin: 0 auto 40px;
+}
+
+.composition__inner {
+
+}
+
+.composition__inner-text {
+
 }
 
 
+
 /* 
-2 part 13:20 min
+2 part 27:10 min
 
 1 part: https://www.youtube.com/watch?v=OWJ9jhH50Eo 
 2 part: https://www.youtube.com/watch?v=mPub0dbLE_Q
