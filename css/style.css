@@ -1,3 +1,11 @@
+/* 
+3 part 11:30 min
+
+1 part: https://www.youtube.com/watch?v=OWJ9jhH50Eo 
+2 part: https://www.youtube.com/watch?v=mPub0dbLE_Q
+3 part: https://www.youtube.com/watch?v=IRwLeYkiwjY
+*/
+
 html {
   box-sizing: border-box;
 }
@@ -258,7 +266,7 @@ body {
 .audio__box {
   color: #fff;
   text-align: center;
-  padding-bottom: 30vh;
+  padding-bottom: 50vh;
 }
 
 .audio__text {
@@ -287,15 +295,51 @@ body {
   background-color: #000;
   color: #fff;
   text-align: center;
+  font-weight: 700;
 }
 
+.footer__text {
+  padding: 20px 0;
+}
 
+.footer__list{
+  padding-left: 0;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
+@media (max-width: 1200px) {
+  .choose-colour__list {
+    flex-wrap: wrap;
+  }
+}
 
+@media (max-width: 768px) {
+  .choose-colour {
+    padding-bottom: 60px;
+  }
 
-/* 
-2 part 01:24:10 min
+  .main__title {
+    font-size: 36px;
+  }
 
-1 part: https://www.youtube.com/watch?v=OWJ9jhH50Eo 
-2 part: https://www.youtube.com/watch?v=mPub0dbLE_Q
-*/
+  .composition {
+    margin-bottom: 60px;
+  }
+
+  .case {
+    padding: 60px 0;
+  }
+
+  .energy__title {
+    padding-top: 60px;
+  }
+
+  .energy__num {
+    font-size: 110px;
+  }
+}
