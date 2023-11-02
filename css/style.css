@@ -210,8 +210,38 @@ body {
   margin: 0 auto;
 }
 
+.footer {
+  padding: 250px 0 40px;
+  background-color: #000;
+}
+
+.audio {
+  background-image: url(../img/audio_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.audio__inner {
+  min-width: 200vh;
+}
+
+.audio__box {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 
-2 part 40:10 min
+2 part 50:10 min
 
 1 part: https://www.youtube.com/watch?v=OWJ9jhH50Eo 
 2 part: https://www.youtube.com/watch?v=mPub0dbLE_Q
