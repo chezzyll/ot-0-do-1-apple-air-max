@@ -1,9 +1,8 @@
 /* 
-3 part 11:30 min
-
 1 part: https://www.youtube.com/watch?v=OWJ9jhH50Eo 
 2 part: https://www.youtube.com/watch?v=mPub0dbLE_Q
 3 part: https://www.youtube.com/watch?v=IRwLeYkiwjY
+4 part: https://www.youtube.com/watch?v=eR8rH7BLawE
 */
 
 html {
@@ -42,10 +41,18 @@ body {
 }
 
 .main__title {
-    font-weight: 700;
-    font-size: 64px;
-    margin-bottom: 20px;
-    margin-top: 0;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.content-item {
+  display: none;
+}
+
+.content-item.content-item__active {
+  display: inline-block;
 }
 
 .container {
@@ -95,8 +102,27 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
   z-index: -2;
+}
+
+.header__content-images:has(.colour--black.content-item__active)::before {
+  background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.colour--white.content-item__active)::before {
+  background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.colour--red.content-item__active)::before {
+  background: linear-gradient(180deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.colour--green.content-item__active)::before {
+  background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.colour--blue.content-item__active)::before {
+  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
 }
 
 .title {
@@ -158,18 +184,22 @@ body {
   padding: 50px 55px;
 }
 
+.choose-colour-btn.choose-colour-btn--active {
+  display: none;
+}
+
 .composition {
-    margin-bottom: 180px;
+  margin-bottom: 180px;
 }
 
 .composition__title {
-    text-align: center;
+  text-align: center;
 }
 
 .composition__text {
-    text-align: center;
-    max-width: 655px;
-    margin: 0 auto 40px;
+  text-align: center;
+  max-width: 655px;
+  margin: 0 auto 40px;
 }
 
 .composition__inner {
@@ -302,7 +332,7 @@ body {
   padding: 20px 0;
 }
 
-.footer__list{
+.footer__list {
   padding-left: 0;
   padding-top: 80px;
   display: flex;
@@ -312,15 +342,64 @@ body {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1469px) {
+  .header__content-images img {
+    max-width: 100%;
+  }
+
   .choose-colour__list {
     flex-wrap: wrap;
+  }
+
+  .title {
+    font-size: 180px;
+    transform: translate(129px, 29px);
+  }
+}
+
+@media (max-width: 1349px) {
+  .title {
+    transform: none;
+    font-size: 140px;
+    padding-top: 20vh;
+  }
+
+  .title--pod {
+    z-index: 1;
+  }
+
+  .title--s {
+    transform: none;
+  }
+
+  .title--m {
+    transform: none;
+  }
+
+  .title--ax {
+    transform: none;
+  }
+}
+
+@media (max-width: 930px) {
+  .title {
+    position: relative;
+    font-size: 100px;
+    padding-top: 0;
+  }
+
+  .title--m {
+    padding-left: 15px;
   }
 }
 
 @media (max-width: 768px) {
   .choose-colour {
     padding-bottom: 60px;
+  }
+
+  .choose-colour__list {
+    gap: 16px;
   }
 
   .main__title {
@@ -341,5 +420,75 @@ body {
 
   .energy__num {
     font-size: 110px;
+  }
+
+  .title {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 560px) {
+  .choose-colour__text {
+    margin-bottom: 40px;
+  }
+
+  .choose-colour {
+    padding-bottom: 40px;
+  }
+
+  .case {
+    padding: 40px 0;
+  }
+
+  .composition__inner-text p {
+    width: 100%;
+  }
+
+  .composition__inner {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .menu__list {
+    flex-wrap: wrap;
+  }
+
+  .menu__item-btn {
+    margin-left: auto;
+  }
+
+  .menu__item-btn button {
+    width: 200px;
+  }
+
+  .menu__item:first-child {
+    margin-left: auto;
+  }
+
+  .header__top {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 414px) {
+
+  .main__title,
+  .choose-colour__title {
+    font-size: 28px;
+  }
+
+  .energy__num {
+    font-size: 92px;
+  }
+
+  .case img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 404px) {
+  .title {
+    font-size: 50px;
   }
 }
